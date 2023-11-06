@@ -1,10 +1,9 @@
-public abstract class Honda{
+public class Honda extends Carro{
 
     private String marca;
 
     private String nome;
 
-    public abstract String marcaDeCarro();
 
     public void imprimirMarca() {
         System.out.println("Honda");
@@ -28,5 +27,15 @@ public abstract class Honda{
         this.nome = nome;
     }
 
+    @Override
+    public String toString() {
+        return "Honda{" +
+                "nome='" + nome + '\'' +
+                '}';
+    }
 
+    @Override
+    public String marcaDeCarro() {
+        return this.nome;
+    }
 }

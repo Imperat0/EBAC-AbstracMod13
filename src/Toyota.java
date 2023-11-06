@@ -1,4 +1,4 @@
-public class Civic extends Honda{
+public class Toyota extends Carro{
 
     private String cor;
     private String nome;
@@ -11,6 +11,11 @@ public class Civic extends Honda{
         this.cor = cor;
     }
 
+    @Override
+    public String marcaDeCarro() {
+        return this.nome;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -20,9 +25,9 @@ public class Civic extends Honda{
     }
 
     @Override
-    public String marcaDeCarro() {
-        return marcaDeCarro();
+    public String toString() {
+        return "Toyota{" +
+                "nome='" + nome + '\'' +
+                '}';
     }
-
-
 }

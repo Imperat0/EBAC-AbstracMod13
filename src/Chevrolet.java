@@ -1,4 +1,4 @@
-public class Hrv extends Honda{
+public class Chevrolet extends Carro{
 
     private String cor;
     private String nome;
@@ -11,11 +11,6 @@ public class Hrv extends Honda{
         this.cor = cor;
     }
 
-    @Override
-    public String marcaDeCarro() {
-        return this.getMarca();
-    }
-
     public String getNome() {
         return nome;
     }
@@ -24,5 +19,15 @@ public class Hrv extends Honda{
         this.nome = nome;
     }
 
+    @Override
+    public String marcaDeCarro() {
+        return this.nome;
+    }
 
+    @Override
+    public String toString() {
+        return "Chevrolet{" +
+                "nome='" + nome + '\'' +
+                '}';
+    }
 }
