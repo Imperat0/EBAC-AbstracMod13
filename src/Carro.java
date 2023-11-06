@@ -17,10 +17,10 @@ public abstract class Carro {
         Toyota toyota = new Toyota();
         toyota.setNome("Etios");
 
-        List<String> carro = new ArrayList<>();
-        carro.add(toyota.getNome());
-        carro.add(chevrolet.getNome());
-        carro.add(honda.getNome());
+        List<Carro> carro = new ArrayList<>();
+        carro.add(honda);
+        carro.add(toyota);
+        carro.add(chevrolet);
         System.out.println(carro);
     }
 
